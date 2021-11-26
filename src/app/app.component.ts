@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularFront';
+  ocultar = false;
+  resultadoDataBindingEvent = "";
+
+  changeH4(){
+    this.resultadoDataBindingEvent ="Me cambiaron por evento!"
+  }
 }
