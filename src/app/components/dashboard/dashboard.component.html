@@ -5,7 +5,7 @@
     <div class="card-body">
       <h5 class="card-title">Medicion de material particulado PM2.5</h5>
       <p class="card-text">{{aqi}}</p>
-      <a href="#" class="btn btn-primary" (click)="getAQI()">Obtener Medicion</a>
+      <button class="btn btn-primary" (click)="getAQI()" [disabled]="lockButton">Obtener medición</button>
     </div>
     <div class="card-footer text-muted">
     {{date}}
